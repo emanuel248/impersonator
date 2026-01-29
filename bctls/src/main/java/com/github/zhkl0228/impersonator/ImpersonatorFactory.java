@@ -136,7 +136,7 @@ public abstract class ImpersonatorFactory implements Impersonator, ImpersonatorA
         }
     }
 
-    private static void sortExtensions(Map<Integer,byte[]> clientExtensions, Map<Integer,byte[]> copy, String order) {
+    public static void sortExtensions(Map<Integer,byte[]> clientExtensions, Map<Integer,byte[]> copy, String order) {
         if (copy == null) {
             copy = new HashMap<>(clientExtensions);
             clientExtensions.clear();
